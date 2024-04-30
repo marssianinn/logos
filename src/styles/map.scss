@@ -1,0 +1,115 @@
+.map{
+  background: url("../assets/image/Rectangle 245.png") center/cover no-repeat;
+  display: flex;
+  padding: 267px 110px 40px;
+
+  &__content{
+    background: #2E2B2C;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 560px;
+    padding:25px 50px;
+    border-radius: 15px;
+    align-items: flex-start;
+  }
+  &__title{
+    font-family: "Gilroy",sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 26px;
+
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    row-gap: 20px;
+    padding: 15px 0 48px;
+    &::before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 48.33%, rgba(255, 255, 255, 0) 100.87%);
+      top: 0;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 48.33%, rgba(255, 255, 255, 0) 100.87%);
+      bottom: 0;
+    }
+
+
+    &-box{
+      display: flex;
+      column-gap: 10px;
+
+
+    }
+  }
+  &__box{
+    display: flex;
+    row-gap: 7px;
+    flex-direction: column;
+  }
+  &__text{
+    font-family: 'Gilroy', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.24px;
+    text-align: left;
+    color: #CFCFCF;
+  }
+  &__subtitle{
+    font-family: 'Gilroy',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+  }
+  &__order{
+    display: flex;
+    padding: 18px 0 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+
+    &-info{
+      display: flex;
+      column-gap: 33px;
+      justify-content: center;
+      align-items: center;
+    }
+    &-btn{
+      background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+      padding: 22px 30px;
+      border-radius: 10px;
+      color: #ffffff;
+      border: none;
+      font-size: 13px;
+    }
+    &-title{
+      font-family: 'Gilroy',sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+    }
+    &-text{
+      font-size: 13px;
+      font-weight: 400;
+      color: #CFCFCF;
+
+    }
+    &-social{
+      display: flex;
+      column-gap: 11px;
+      p{
+        font-size: 16px;
+        margin-right: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.about{
+  margin: 0 40px;
+  height: 55vh;
+  position: relative;
+
+  &__content{
+    position: absolute;
+    z-index: 5;
+  }
+  &__main{
+    background: url("../../public/assets/image/фото.png") center/cover no-repeat;
+    width: 100%;
+    height: 610px;
+    position: relative;
+    &::before{
+      z-index: 1;
+      position: absolute;
+      content: '';
+      background: linear-gradient(90deg, #211F20 30%, rgba(68, 64, 63, 0) 100%);
+      width: 100%;
+      height: 610px;
+    }
+    &-block{
+      position: relative;
+      z-index: 5;
+      display: flex;
+      column-gap: 100px;
+      padding: 71px 100px 71px 70px;
+    }
+  }
+  &__overview{
+    position: relative;
+    z-index: 2;
+    width: 50%;
+
+    &-title{
+      color: #ffffff;
+      font-size: 32px;
+      margin-top: 30px ;
+      margin-bottom: 26px;
+    }
+    &-subtitle{
+      font-family: 'Gilroy', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      color: #CFCFCF;
+      margin-bottom: 60px;
+    }
+    &-btn{
+      background:#FFFFFF20;
+      border: 1px solid #FFFFFF33;
+      border-radius: 10px;
+      padding: 22px 25px 22px 64px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  }
+  &__icons{
+    display: flex;
+    column-gap: 15px;
+    row-gap: 15px;
+    flex-wrap: wrap;
+    width: 500px;
+
+    &-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 220px;
+      height: 220px;
+      background: #504B4AE5;
+      cursor: pointer;
+      &:hover{
+        background: #504B4A;
+        box-shadow: 0 40px 50px rgba(0,0,0,0.4);
+
+        p{
+          color: #79B282;
+        }
+        svg path{
+          fill:#79B282;
+        }
+      }
+
+    }
+    &-svg{
+
+    }
+    &-text{
+      bottom: 40px;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: 'Gilroy', sans-serif;
+    }
+  }
+}

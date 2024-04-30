@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Gilroy',sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+body{
+  background: #3E3A3A;
+}
+.container{
+  max-width: 1276px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@import "product";
+@import 'about';
+@import "header";
+@import "products";
+@import 'form';
+@import "begin";
+@import "catalog";
+@import "footer";
+@import "sales";
+@import "map";
