@@ -8,6 +8,7 @@ import Layout from "./Layout/Layout";
 import Catalog from "./pages/Catalog/Catalog";
 import Sales from "./pages/Sales/Sales";
 import Delivery from "./pages/Delivery/Delivery";
+import Product from "./pages/Product/Product";
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
                     <Route path='/sales' element={<Sales/>}/>
                     <Route path='/delivery' element={<Delivery/>}/>
                     <Route path='/catalog/:category' element={<Catalog/>}/>
+                    <Route path='/product/:id' element={<Product/>}/>
                 </Route>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/register' element={<Register/>}/>
