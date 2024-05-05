@@ -1,11 +1,12 @@
 import React from 'react';
 import {BsCart3} from "react-icons/bs";
+import {useNavigate} from "react-router-dom";
 
 const Card = ({item}) => {
-
+    const navigate = useNavigate()
     return (
             <div className='products__card'>
-                <img src={`${item.image[0] ==='.'?'../src' :''}${item.image}`} alt={item.title} className='products__card-img'/>
+                <img onClick={()=>navigate(`/product/${item.id}`)} src={`${item.image[0] ==='.'?'../src' :''}${item.image}`} alt={item.title} className='products__card-img'/>
                 <div className='products__card-info'>
                     <div className='products__card-name'>
                         <div style={{display:"flex",justifyContent:"space-between",width:'100%'}}>

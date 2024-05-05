@@ -307,6 +307,11 @@
       "email": "amia123@gmail.com",
       "password": "$2a$10$33bsRONBwtTc.StkpROSAu0pVqdc3ybDn2UWM2HlQTfkAH6KZo.R.",
       "id": 4
+    },
+    {
+      "email": "mars123@gmail.com",
+      "password": "$2a$10$92o7gJLvDBO2vv2XDSSVLux72I6iXDdNSfzAtmasjexpdWOoQw/eq",
+      "id": 5
     }
   ],
   "sales": [

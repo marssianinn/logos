@@ -54,7 +54,7 @@ const Form = () => {
                     !status&&<>
                         <input className='form__field' value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Введите Email' type="text"/>
                         <div className='form__btn' onClick={() => setStatus(true)}>Продолжить</div>
-                        <Link to='/купшыеук'>у меня есть аккаунт</Link>
+                        <Link to='/login'>у меня есть аккаунт</Link>
                     </>
                 }
 

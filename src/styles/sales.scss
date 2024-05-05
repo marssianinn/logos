@@ -1,3 +1,51 @@
 .sales{
+  padding-bottom: 60px;
 
+  &__row{
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 50px;
+  }
+  &__card{
+    width: calc(33.33333% - 13.33333px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    &-block{
+      padding: 15px 25px;
+      background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+      border-radius: 10px;
+
+    }
+
+    &-img{
+      width: 100%;
+    }
+    &-title{
+      font-family: 'Gilroy',sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.76px;
+      text-align: left;
+    }
+    &-desc{
+      font-family: 'Gilroy',sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.24px;
+      text-align: left;
+      color: #A6A7AB;
+      margin: 5px 0 19px;
+    }
+    &-date{
+      font-family: 'Gilroy',sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.24px;
+      text-align: left;
+      color: #6FA076;
+    }
+  }
 }

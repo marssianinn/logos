@@ -10,7 +10,7 @@ const Header = () => {
             email:''
         })
         localStorage.removeItem('user')
-        navigate('/register')
+        navigate('/login')
     }
     return (
         <header className='Header'>
@@ -50,7 +50,7 @@ const Header = () => {
                             <span className='header__phone-number'>+7 (917) 510-57-59</span>
                         </div>
                     </div>
-                    {user.email.length ? <span onClick={logOutUser}>
+                    {user.email.length ? <span style={{cursor:'pointer'}} onClick={logOutUser}>
                     <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="8.57881" cy="6.27803" r="4.77803" stroke="white" strokeWidth="1.5"
                                 strokeLinecap="round" strokeLinejoin="round"/>
@@ -60,7 +60,7 @@ const Header = () => {
                     </svg>
                     Выйти
                 </span> :
-                        <Link to='/login'>
+                        <Link to='/login' style={{cursor:'pointer'}}>
                             <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="8.57881" cy="6.27803" r="4.77803" stroke="white" strokeWidth="1.5"
                                         strokeLinecap="round" strokeLinejoin="round"/>
