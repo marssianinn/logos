@@ -10,6 +10,7 @@ import Sales from "./pages/Sales/Sales";
 import Delivery from "./pages/Delivery/Delivery";
 import Product from "./pages/Product/Product";
 import AddProduct from "./pages/AddProduct/AddProduct";
+import Basket from "./pages/Basket/Basket";
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
                     <Route path='/' element={<Home/>}/>
                     <Route path='/sales' element={<Sales/>}/>
                     <Route path='/delivery' element={<Delivery/>}/>
+                    <Route path='/basket' element={<Basket/>}/>
                     <Route path='/catalog/:category' element={<Catalog/>}/>
                     <Route path='/product/:id' element={<Product/>}/>
                     <Route path='/product/add' element={<AddProduct/>}/>

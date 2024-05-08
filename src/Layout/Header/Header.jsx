@@ -71,12 +71,12 @@ const Header = () => {
                             Войти
                         </Link>
                     }
-                    <div className='header__basket'>
+                    <Link to='/basket' className='header__basket'>
                         <h3 className='header__basket-text'>Корзина</h3>
                         <div className='header__basket-counts'>
                             <div className='header__basket-count'>4</div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </header>

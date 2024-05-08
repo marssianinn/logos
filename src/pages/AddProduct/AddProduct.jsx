@@ -92,7 +92,7 @@ const AddProduct = () => {
 
                         <label className='form__label' htmlFor="">
                             <span className='form__label-title'>Категории</span>
-                            <select {...register('category', {
+                            <select {...register('categories', {
                                 required: true
                             })} className='form__select' name="" id="">
                                 <option value="">Выберите категорию</option>
