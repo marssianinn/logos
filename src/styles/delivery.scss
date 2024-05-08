@@ -1,0 +1,61 @@
+.delivery{
+  background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+
+  &__content{
+  display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__row{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: calc(50% - 10px);
+    &-item{
+
+
+    }
+  }
+  &__question{
+    padding: 20px 30px;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  &__answer{
+    padding: 40px 30px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  }
+  &__map{
+    background: url("../assets/image/maps.png") center/cover no-repeat;
+    width: calc(50% - 10px);
+    height: 400px;
+  }
+  &__block{
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-bottom: 40px;
+
+    &-title{
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 35px;
+      text-align: left;
+    }
+    &-time{
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 35px;
+      text-align: left;
+      color:#CFCFCF;
+    }
+    &-item{
+      display: flex;
+      column-gap: 100px;
+    }
+  }
+}

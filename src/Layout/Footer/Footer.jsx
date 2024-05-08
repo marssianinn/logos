@@ -3,11 +3,16 @@ import {Link, useNavigate} from 'react-router-dom'
 import { IoIosArrowUp} from "react-icons/io";
 const Footer = () => {
     const navigate = useNavigate()
+
+    const clickToTop = () => {
+        window.scroll(0,0)
+    }
+
     return (
         <footer className='footer'>
             <div className="container">
                 <div className="footer__content">
-                    <span className='footer__svg'>
+                    <span className='footer__svg' onClick={() => clickToTop()}>
                         <IoIosArrowUp fill='black' size={40}/>
                     </span>
                     <div className="footer__block">

@@ -285,6 +285,19 @@
       "categories": "drinks",
       "calories": 76,
       "id": 22
+    },
+    {
+      "title": "Том ям",
+      "image": "https://smaylovich.ru/upload/iblock/2f5/aocde0nn0pz56q2k1819zt991rw8qmui.jpeg",
+      "description": "Том ям или том ям — это семейство кисло-острых тайских супов.",
+      "price": "330",
+      "weight": "300",
+      "protein": "22",
+      "fats": "27",
+      "carbohydrates": "30",
+      "category": "Выберите категорию",
+      "calories": 451,
+      "id": 23
     }
   ],
   "users": [

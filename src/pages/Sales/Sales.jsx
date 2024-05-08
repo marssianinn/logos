@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Title from "../../components/Title/Title";
 import axios from "../../utils/axios";
 import Map from "../Home/Map/Map";
+import ProductList from "../../components/ProductList/ProductList";
 
 const Sales = () => {
     const [sales,setSales] = useState([])
@@ -13,6 +14,7 @@ const Sales = () => {
     return (
         <>
             <section className='sales'>
+                <ProductList/>
             <div className="container">
                 <Title title='Акции'/>
                 <div className="sales__row">

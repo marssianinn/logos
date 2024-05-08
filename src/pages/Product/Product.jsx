@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import axios from "../../utils/axios";
+import ProductList from "../../components/ProductList/ProductList";
 
 const Product = () => {
     const [product,setProduct] = useState({})
@@ -13,11 +14,15 @@ const Product = () => {
 
     if(JSON.stringify(product)==='{}'){
         return (
-            <h2>Продукт не найден</h2>
+            <section style={{height:'63vh'}}>
+                <ProductList/>
+                <h2>Продукт не найден</h2>
+            </section>
         )
     }
     return (
         <section className='product'>
+            <ProductList/>
             <div className="container">
                 {
                     product.title
