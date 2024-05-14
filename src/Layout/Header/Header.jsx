@@ -1,9 +1,11 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import {Link, useNavigate} from "react-router-dom";
 import {CustomContext} from "../../utils/Context";
+import BasketZero from "../../pages/Basket/BasketZero/BasketZero";
 
 const Header = () => {
-    const {user,setUser}= useContext(CustomContext)
+    const [show,setShow]=useState(false)
+    const {user,setUser,basket}= useContext(CustomContext)
     const navigate = useNavigate()
     const logOutUser=()=>{
         setUser({
@@ -71,14 +73,21 @@ const Header = () => {
                             Войти
                         </Link>
                     }
-                    <Link to='/basket' className='header__basket'>
+                    <button onClick={()=>{
+                        if(basket.length) {
+                            navigate('/basket')
+                        }else {
+                            setShow(true)
+                        }
+                    }} className='header__basket'>
                         <h3 className='header__basket-text'>Корзина</h3>
                         <div className='header__basket-counts'>
-                            <div className='header__basket-count'>4</div>
+                            <div className='header__basket-count'>{basket.length}</div>
                         </div>
-                    </Link>
+                    </button>
                 </div>
             </div>
+            <BasketZero show={show} setShow={setShow}/>
         </header>
     );
 };

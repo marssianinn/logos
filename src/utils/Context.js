@@ -4,6 +4,7 @@ import axios from "./axios";
 export const CustomContext = createContext()
 export const Context = (props)=>{
     const [products,setProducts]=useState([])
+    const [basket,setBasket]=useState([])
     const [user, setUser]=useState({
         email:''
     })
@@ -20,12 +21,18 @@ export const Context = (props)=>{
             .catch((err)=>console.log(err))
     }
 
+    const addBasket=(product)=>{
+        setBasket(prev=>[...prev,product])
+    }
+
     const value = {
         user,
         setUser,
         products,
         setProducts,
-        getAllProducts
+        getAllProducts,
+        basket,
+        addBasket
     }
     return <CustomContext.Provider value={value}>
         {props.children}

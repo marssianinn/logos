@@ -2,9 +2,11 @@ import React from 'react';
 
 const Basket = () => {
     return (
-        <div>
-            
-        </div>
+        <section className='basket'>
+            <div className="container">
+                basket
+            </div>
+        </section>
     );
 };
 
