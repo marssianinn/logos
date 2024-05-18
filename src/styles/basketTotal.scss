@@ -1,0 +1,13 @@
+.basketTotal{
+  margin: 80px auto 0;
+  max-width: 763px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  padding: 20px 30px;
+  &__create{
+
+  }
+}

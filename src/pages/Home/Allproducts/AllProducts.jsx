@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 import ProductsFilter from "../../../components/ProductsFilter/ProductsFilter";
 import ProductList from "../../../components/ProductList/ProductList";
+import {CustomContext} from "../../../utils/Context";
 
 const AllProducts = () => {
-
-
+const {getAllProducts}=useContext(CustomContext)
+    useEffect(() => {
+        getAllProducts()
+    }, []);
 
     return (
         <section className='products'>

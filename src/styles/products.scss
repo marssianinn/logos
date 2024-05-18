@@ -1,4 +1,5 @@
 .products {
+  padding-top: 0;
   padding-bottom: 93px;
   &__list {
     max-height: 10vh;
@@ -75,6 +76,23 @@
     height: 100%;
     transition: .5s all;
     position: relative;
+    &-circle{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-style: normal;
+      font-family:'Gilroy', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -25px;
+      right: -25px;
+      background: #79B282;
+    }
 
     &:hover {
       box-shadow: 0 30px 45px rgba(43, 40, 40, 0.6);

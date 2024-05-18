@@ -1,14 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {useNavigate, useParams} from "react-router-dom";
 import axios from "../../utils/axios";
 import ProductList from "../../components/ProductList/ProductList";
 import {FiChevronLeft} from "react-icons/fi";
 import {BsCart3} from "react-icons/bs";
+import {CustomContext} from "../../utils/Context";
 
 const Product = () => {
     const navigate = useNavigate()
     const [product,setProduct] = useState({})
     const {id}=useParams()
+    const {addBasket} = useContext(CustomContext)
     useEffect(() => {
         axios(`/products/${id}`)
             .then(({data})=>setProduct(data))
@@ -47,7 +49,7 @@ const Product = () => {
                                 <p>Вес:{product.weight}</p>
                             </div>
 
-                            <button className='products__card-btn'>
+                            <button className='products__card-btn' onClick={()=>addBasket(product)}>
                                 В корзину
                                 <BsCart3 size={20}/>
                             </button>
