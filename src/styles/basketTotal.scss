@@ -7,7 +7,12 @@
   align-items: center;
   background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
   padding: 20px 30px;
+  border-radius: 10px;
   &__create{
-
+    padding: 17px 50px;
+    background: #79B282;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
   }
 }
