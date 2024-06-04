@@ -11,6 +11,7 @@ import Delivery from "./pages/Delivery/Delivery";
 import Product from "./pages/Product/Product";
 import AddProduct from "./pages/AddProduct/AddProduct";
 import Basket from "./pages/Basket/Basket";
+import Orders from "./pages/Orders/Orders";
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
                     <Route path='/catalog/:category' element={<Catalog/>}/>
                     <Route path='/product/:id' element={<Product/>}/>
                     <Route path='/product/add' element={<AddProduct/>}/>
+                    <Route path='/orders' element={<Orders/>}/>
                 </Route>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/register' element={<Register/>}/>

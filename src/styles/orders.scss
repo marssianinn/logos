@@ -1,0 +1,74 @@
+.orders{
+  &__back{
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+  &__select{
+    color: black !important;
+    border-color: white;
+  }
+
+  &__contact{
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    padding: 30px 30px 57px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 20px;
+
+    &-btns{
+      display: flex;
+      column-gap: 10px;
+    }
+
+    &-title{
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    &-label{
+      display: flex;
+      margin-bottom: 30px;
+      column-gap: 15px;
+    }
+    &-title{
+      font-family: 'Gilroy',sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &-input{
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px 30px;
+      font-family: 'Gilroy',sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      background: transparent;
+    }
+    &-btn{
+
+      background: transparent;
+      border-radius: 10px;
+      border:1px solid #72A479;
+      padding: 20px 15px;
+      cursor: pointer;
+    }
+    &-btn:active{
+      background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    }
+
+    &-accept::after{
+      content: 'Условиями';
+      margin-left: 5px;
+      color: #72A479;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
