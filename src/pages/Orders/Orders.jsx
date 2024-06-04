@@ -9,8 +9,6 @@ import {CustomContext} from "../../utils/Context";
 
 const Orders = () => {
 
-
-
     const {setBasket}=useContext(CustomContext)
     const handleAddOrder = (data)=>{
         const newOrder={
@@ -22,14 +20,14 @@ const Orders = () => {
             reset()
         }).catch((err)=>alert(err.message))
     }
+
     const navigate = useNavigate()
+
     const {
         reset,
         handleSubmit,
         register
-    }=useForm({
-        mode:'onBlur'
-    })
+    }=useForm({mode:'onBlur'})
 
     const [delivery,setDelivery]=  useState('delivery')
     const [buy,setBuy]=useState('online')
